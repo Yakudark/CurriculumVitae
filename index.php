@@ -1,5 +1,3 @@
-<!-- https://www.youtube.com/watch?v=p42h82XKi5c -->
-
 <?php
 session_start();
 if (isset($_POST['send'])) {
