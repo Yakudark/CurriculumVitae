@@ -15,3 +15,18 @@ AOS.init({
   anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
 
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  const navbarToggler = document.querySelector(".navbar-toggler");
+  const navbarCollapse = document.querySelector(".navbar-collapse");
+
+  navbarLinks.forEach(function (link) {
+      link.addEventListener("click", function () {
+          if (navbarCollapse.classList.contains("show")) {
+              navbarToggler.click();
+          }
+      });
+  });
+});
